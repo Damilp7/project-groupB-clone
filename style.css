@@ -1,0 +1,729 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* HEADER SECTION CSS STARTS HERE */
+
+/* Nav container css starts here */
+.nav-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+
+}
+.brand-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.brand-name{
+  font-size: 18px;
+  font-family: Poppins;
+  padding: .75rem;
+  font-weight: 700;
+  color: hsl(255, 11%, 22%);
+
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li{
+  list-style: none;
+}
+
+.navbar-links li a{
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  padding: 1rem;
+  display: block;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 700;
+}
+
+.navbar-links li a:hover{
+  cursor: pointer;
+  color: hsl(255, 11%, 22%);
+}
+
+.nav-btn1, .nav-btn2{
+  border: 0;
+  border-radius: 12px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.nav-btn1{
+color: hsl(0, 0%, 75%);
+background-color: rgba(255, 255, 255, 0.089);
+margin-right: 10px;
+}
+.nav-btn1:hover{
+color: hsl(255, 11%, 22%);
+cursor: pointer;
+
+}
+
+.nav-btn2{
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+}
+.nav-btn2:hover{
+  background-color: hsla(180, 64%, 58%, 0.692);
+  cursor: pointer;
+  
+  }
+.toggle-button{
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar{
+  height: 2.5px;
+  width: 100%;
+  background-color: hsl(257, 7%, 63%);
+  border-radius: 10px;
+}
+
+/* Nav container css ends here */
+
+/* header container css starts here */
+.header-container{
+  display: flex;
+  justify-content: center;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: Poppins;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-left: 100px;
+}
+.header-content h1{
+  max-width: 21.875rem;
+  font-size: 2.75rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 3.5rem;
+
+}
+.header-content p{
+  max-width: 25rem;
+  color: hsl(0, 0%, 75%);
+}
+.header-content button{
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  padding: 10px 30px;
+  font-size: 14px;
+  border: 0;
+  border-radius: 24px;
+  font-weight: 500;
+}
+
+.header-content button:hover{
+  background-color: hsla(180, 66%, 49%, 0.432);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.header-image{
+max-width: 600px;
+padding-left: 150px;
+padding-left: 150px;
+}
+
+
+
+/* header container css ends here */
+
+/* HEADER SECTION CSS ENDS HERE */
+
+
+
+/* MAIN SECTION CSS STARTS HERE */
+
+
+/* search container css starts here */
+.search-container{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 0px 130px;
+    /* width: 85%; */
+    background-color: hsla(40, 12%, 95%, 0.96);
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* height: 400px; */
+    position: relative;
+    font-size: 10px;
+    margin-top: 80px;
+  }
+  .search-button {
+    margin: 0 auto;
+    margin-top: -4%;
+    padding: 30px;
+    width: 85%;
+    height: 100px;
+    background: hsl(257, 27%, 26%) url(images/bg-boost-desktop.svg);
+    background-position: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow:  0px 0px 1px lightgray ;
+  }
+  .search-button input{
+    outline: 1px solid hsl(0, 87%, 67%);
+    margin: 20px;
+    padding: 15px;
+    width: 1000px;
+    border-radius: 5px;
+    border: none;
+    align-content: center;
+  }
+  .search-button input::placeholder {
+    padding: 0px 10px;
+    color:  hsl(0, 87%, 67%);
+    font-weight: 500;
+  }
+  .search-button .btn {
+    margin: 2px;
+    padding: 15px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .search-button .btn:hover{
+    background-color: hsl(180, 87%, 76%); 
+  }
+  .search-button p{
+    color: hsl(0, 87%, 67%);
+  }
+  .search-links {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 85%;
+    gap: 5px;
+  }
+  .search-link {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    /* font-size: 13px; */
+    box-shadow:  0px 0px 1px lightgray ;
+  }
+  .search-link p{
+    display: flex;
+    flex: 1;
+  }
+  .search-link span {
+    padding: 0px 20px;
+    color: hsl(180, 66%, 49%);
+  }
+  .search-link  button {
+    padding: 6px 15px;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .search-link .copied-btn {
+    background-color: hsl(257, 27%, 26%);
+  }
+
+  .search-link  button:hover{
+    background-color: hsla(180, 66%, 49%, 0.589);
+  }
+
+/* search container css ends here */
+
+/* statistics-container css starts here */
+.statistics-container {
+  background-color: hsla(40, 12%, 95%, 0.96);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.statistics-header {
+  padding-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.statistics-header h2 {
+  font-size: 30px;
+  margin: 15px 0px;
+}
+.statistics-header p{
+  color:  hsl(0, 0%, 75%);
+}
+
+/* statistics-container css ends here */
+
+/* position container css starts here */
+.position-container {
+  margin-top: -10px;
+  width: 85%;
+  background-color: hsla(40, 12%, 95%, 0.96);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* height: 700px; */
+  position: relative;
+}
+.flex-cards {
+  font-family: 'Poppins', sans-serif;
+  margin: 50px 7%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-cards p {
+  color: hsla(0, 1%, 65%, 0.955);
+  font-size: 14px;
+  padding-top: 15px;
+}
+.card1{
+  background-color: white;
+  border: 1px solid rgb(223, 217, 217, 0.685);
+  border-style: none;
+  border-radius: 10px;
+  margin-left: 2rem;
+  padding: 40px;
+  position: relative;
+}
+.card2 {
+  background-color: white;
+  border: 1px solid rgba(223, 217, 217, 0.685);
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding: 40px;
+  position: relative;
+}
+.card3 {
+  background-color: white;
+  border: 1px solid rgb(223, 217, 217, 0.685);
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 8rem;
+  padding: 40px;
+  position: relative;
+}
+.card h3 {
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+.card p {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0px;
+  color: hsl(0, 0%, 58%);
+}
+.icon-background {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(257, 27%, 26%);
+  padding: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: -12%;
+}
+/* position container css ends here */
+
+/* MAIN SECTION CSS ENDS HERE */
+
+
+/* FOOTER SECTION CSS STARTS HERE */
+
+
+/* footer1 container starts here */
+.footer1-container .footer1{
+  display: flex;
+  flex-direction: column;
+  background: hsl(255, 11%, 22%) url(images/bg-boost-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+.footer1-container .footer1 h1{
+  color: white;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 18px;
+}
+.footer1-container .footer1 button{
+  border-radius: 20px;
+  background-color: hsl(180, 66%, 49%) ;
+  font-family: Poppins;
+  color: white;
+  border: none;
+  font-weight: 500;
+  padding:8px 20px;
+  font-size: 13px;
+}
+.footer1-container .footer1 button:hover{
+  background-color: hsla(180, 64%, 58%, 0.692);
+cursor: grab;}
+/* footer1 container ends here */
+
+/* /* footer2 container starts here  */
+.footer-2{
+  display: flex;
+  justify-content: space-between;
+  background-color:  hsl(260, 8%, 14%);
+  font-family: Poppins;
+  font-weight: 300;
+  padding: 2rem 5rem;
+}
+.footer-2 h1{
+  color: white;
+}
+.footer-2 ul{
+  list-style-type: none;
+ 
+}
+
+.footer-2 .footer-list ul li{
+  padding-top: 1rem;
+}
+.footer-2 ul li a{
+  text-decoration: none;
+  color: hsl(0, 0%, 75%);
+  
+}
+.footer-2 ul li a:hover{
+  cursor: grab;
+  color:  hsl(180, 53%, 64%);
+}
+.footer-list-brand .footer-brand li a{
+  color: white;
+}
+.footer-list-brand {
+  display: flex;
+  flex-direction: row;
+}
+.footer-brand{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.footer-brand li{
+  padding-top: 1rem;
+}
+.footer-2  .footer-bold{
+  padding-bottom: 1.5rem;
+}
+.footer-list .footer-bold a{
+  color: white;
+  font-weight: 700;  
+}
+/* footer2 container ends here */
+
+/* FOOTER SECTION CSS ENDS HERE */
+
+
+
+/* ????????????? MOBILE RESPONSIVENESS SECTION ?????????????????????? */
+
+
+/* HEADER SECTION CSS STARTS HERE */
+
+/* Nav container css starts here */
+@media (max-width: 428px) {
+  .navbar-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links, .navbar-buttons{
+    display: none;
+    width: 100%;
+  }
+
+  .nav-container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul{
+    width: 100px;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    text-align: center;
+  }
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+  
+}
+
+/* Nav container css ends here */
+
+/* header container css starts here */
+@media (max-width: 600px) {
+  .header-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .header-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+ }
+ .header-content h1{
+  text-align: center;
+ } 
+ .header-content p{
+  max-width: 21rem;
+  text-align: center;
+ } 
+
+ .header-image{
+  display: flex;
+  max-width: 500px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 100px;
+ }
+}
+
+
+
+/* header container css ends here */
+
+/* HEADER SECTION CSS ENDS HERE */
+
+
+
+/* MAIN SECTION CSS STARTS HERE */
+
+/* search container css starts here */
+@media (max-width: 470px) {
+  
+  .search-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    margin: 0 auto;
+  }
+  .search-button{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 170px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-radius: 14px;
+    
+    
+    /* margin-bottom: 50px; */
+}
+
+  .search-button input{
+    width: 330px
+  }
+
+  .search-button .btn{
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    
+    
+  }
+
+  .search-links{
+
+    width: 380px;
+    display: flex;
+    margin: 20px 0px 0px 0px;
+  }
+
+.search-link{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin: 0;
+  padding: 15px;
+  justify-content: left;
+  align-items: flex-start; 
+}
+
+.search-link span{
+  padding: 0;
+}
+
+.search-link button{
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+}
+/* search container css ends here */
+
+/* statistics-container css starts here */
+
+@media (max-width: 475px){
+  .statistics-header h2{
+    padding: 0px 40px;
+  }
+  .statistics-header p {
+    padding: 0px 30px;
+  }
+}
+
+/* statistics-container css ends here */
+
+/* position container css starts here */
+@media (max-width: 470px) {
+  .flex-cards{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  .card1, .card2, .card3{
+    margin: 80px 0px 0px 0px;
+  }
+
+  .icon-background{
+    width: 100px;
+    height: auto;
+    top: -60px;
+    right: 120px;
+    padding: 25px;
+  }
+}
+/* position container css ends here */
+
+/* MAIN SECTION CSS ENDS HERE */
+
+
+/* FOOTER SECTION CSS STARTS HERE */
+ 
+/* footer1 container starts here */
+
+/* footer1 container ends here */
+
+/* footer2 container starts here */
+@media screen and (max-width: 600px) {
+  .footer-2 {
+  /* grid-template-columns: 1fr;
+     padding-left: 0px;
+      justify-items: center;
+      margin: auto; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .footer-2 h1{
+      /* margin: 0px auto; 
+       padding-left: 1.7rem; */
+       display: flex;
+       justify-content: center;
+       padding-left: 40px;
+       margin: 0;
+  }
+  .footer-2 .footer-list{
+      padding-left: 0px;
+      text-align: center;
+      margin: auto;
+  }
+  
+  .footer-list-brand {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+  }
+
+  
+  .footer-brand .footer-list {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+  }
+  
+  .footer-btn {
+      margin-bottom: 2rem;
+  }
+}
